@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн Книгарня</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+    <div class="logo">📚 Книгарня</div>
+    <nav>
+        <a class="omg" href="index.html">Головна</a>
+        <a class="omg" href="announcements.html">Анонси</a>
+        <a class="omg" href="cart.html">Кошик <span id="cart-count">0</span></a>
+    </nav>
+</header>
+    <main>
+    <section class="genre-section">
+        <h2>Фантастика</h2>
+        <div class="book-carousel">
+            <div class="book-card" data-title="Міжзір'я" data-author="Брендон Сандерсон" data-price="550" data-img="https://bookclub.ua/images/db/goods/k/62865_125690_k.jpg">
+                <img src="https://bookclub.ua/images/db/goods/k/62865_125690_k.jpg" alt="Місто Сонця">
+                <h3>Міжзір'я</h3>
+                <p>Брендон Сандерсон</p>
+                <p>550грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Врятуй мене" data-author="Мона Кастен" data-price="335" data-img="https://bookclub.ua/images/db/goods/k/62552_125094_k.jpg">
+            <img src="https://bookclub.ua/images/db/goods/k/62552_125094_k.jpg" alt="Врятуй мене">
+            <h3>Врятуй мене</h3>
+            <p>Мона Кастен</p>
+            <p>335грн</p>
+            <button class="add-to-cart">Додати до кошика</button>
+</div>
+            <div class="book-card" data-title="Четверте крило" data-author="Ребекка Яррос" data-price="450" data-img="https://bookclub.ua/images/db/goods/k/62727_125630_k.jpg">
+    <img src="https://bookclub.ua/images/db/goods/k/62727_125630_k.jpg" alt="Четверте крило">
+    <h3>Четверте крило</h3>
+    <p>Ребекка Яррос</p>
+    <p>450грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Жорстокий принц" data-author="Голлі Блек" data-price="380" data-img="https://bookclub.ua/images/db/goods/k/53932_121590_k.jpg">
+    <img src="https://bookclub.ua/images/db/goods/k/53932_121590_k.jpg" alt="Жорстокий принц">
+    <h3>Жорстокий принц</h3>
+    <p>Голлі Блек</p>
+    <p>380грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="М'ясник та чорна пташка" data-author="Брінн Вівер" data-price="360" data-img="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTxv1LAP5k6E1NY7lFIS55hZOiH0UjBAU-F2_i5xl-oUpo4Zh3JTvrim_UWS1Vre_m6waOfkJGn3aX5H5CtOszGm_2vxCNi57gze4ar8DA5&usqp=CAc">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTxv1LAP5k6E1NY7lFIS55hZOiH0UjBAU-F2_i5xl-oUpo4Zh3JTvrim_UWS1Vre_m6waOfkJGn3aX5H5CtOszGm_2vxCNi57gze4ar8DA5&usqp=CAc" alt="Мідний кінь">
+    <h3>М'ясник та чорна пташка</h3>
+    <p>Брінн Вівер</p>
+    <p>360грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Нефритове місто" data-author="Фонда Лі" data-price="420" data-img="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcThhqYHp1uBbUMDJXYT69KbL1Oy4-YDNiIoQNMz3qfqHBC3EQ8nzqoejRVkNbSENUXGKDpCCzniSqSGCdCnUtOcpbdtx_o7Q6jME3UuVAE&usqp=CAc">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcThhqYHp1uBbUMDJXYT69KbL1Oy4-YDNiIoQNMz3qfqHBC3EQ8nzqoejRVkNbSENUXGKDpCCzniSqSGCdCnUtOcpbdtx_o7Q6jME3UuVAE&usqp=CAc" alt="Нефритове місто">
+    <h3>Нефритове місто</h3>
+    <p>Фонда Лі</p>
+    <p>420грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Ураганні війни" data-author="Тея Гуазон" data-price="650" data-img="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd_olmgq-nOT6q_pz1N71Ngw1m7kRtQmPZUwDqA8Gw4i2v--jFGx1oZLRpActZRulOp3n2IKylLQOeLv9FLrwQ1Cvc8bJSefIS09Ukfuzp&usqp=CAc">
+    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSd_olmgq-nOT6q_pz1N71Ngw1m7kRtQmPZUwDqA8Gw4i2v--jFGx1oZLRpActZRulOp3n2IKylLQOeLv9FLrwQ1Cvc8bJSefIS09Ukfuzp&usqp=CAc" alt="Ураганна вежа">
+    <h3>Ураганна вежа</h3>
+    <p>Брендон Сандерсон</p>
+    <p>650грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Ранок під місячним сяйвом" data-author="Джоан Гаріс" data-price="390" data-img="https://bookclub.ua/images/db/goods/k/63119_126434_k.jpg">
+    <img src="https://bookclub.ua/images/db/goods/k/63119_126434_k.jpg" alt="Золота доба">
+    <h3>Ранок під місячним сяйвом</h3>
+    <p>Джон Гаріс</p>
+    <p>390грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Напівкровка" data-author="Дженніфер Л. Арментроут" data-price="410" data-img="https://bookclub.ua/images/db/goods/k/62922_125857_k.jpg">
+    <img src="https://bookclub.ua/images/db/goods/k/62922_125857_k.jpg" alt="Напівкровка">
+    <h3>Напівкровка</h3>
+    <p>Дженніфер Л. Арментроут</p>
+    <p>410грн</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+            </div>
+          </section>
+        
+
+
+
+     <section class="genre-section">
+        <h2>Детективи</h2>
+        <div class="book-carousel">
+            <div class="book-card" data-title="Будинок на краю світу" data-author="Дін Кунц" data-price="340" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/4/e/4ef79428_photo_2024-06-21_09-09-22.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/4/e/4ef79428_photo_2024-06-21_09-09-22.webp" alt="Будинок на краю світу">
+    <h3>Будинок на краю світу</h3>
+    <p>Дін Кунц</p>
+    <p>340 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Виживуть п'ятеро" data-author="Голлі Джексон" data-price="590" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/b/d/bd12e6cf_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/b/d/bd12e6cf_1.webp" alt="Виживуть п'ятеро">
+    <h3>Виживуть п'ятеро</h3>
+    <p>Голлі Джексон</p>
+    <p>590 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Майстер загадок" data-author="Даніель Труссон" data-price="400" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/6/f/6f0ab1f5_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/6/f/6f0ab1f5_1.webp" alt="Майстер загадок">
+    <h3>Майстер загадок</h3>
+    <p>Даніель Труссон</p>
+    <p>400 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Востаннє, коли я брехала" data-author="Райлі Сейґер" data-price="400" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/d/ad287464_978-966-448-140-0_2.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/d/ad287464_978-966-448-140-0_2.webp" alt="Востаннє, коли я брехала">
+    <h3>Востаннє, коли я брехала</h3>
+    <p>Райлі Сейґер</p>
+    <p>400 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+            <div class="book-card" data-title="Побічник з убивства для хорошої дівчинки" data-author="Голлі Джексон" data-price="590" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/2/7/27a7323e_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/2/7/27a7323e_1.webp" alt="Побічник з убивства для хорошої дівчинки">
+    <h3>Побічник з убивства для хорошої дівчинки</h3>
+    <p>Голлі Джексон</p>
+    <p>590 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Хороша дівчинка, зіпсована кров" data-author="Голлі Джексон" data-price="590" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/d/7/d70a03ab_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/d/7/d70a03ab_1.webp" alt="Хороша дівчинка, зіпсована кров">
+    <h3>Хороша дівчинка, зіпсована кров</h3>
+    <p>Голлі Джексон</p>
+    <p>590 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Терапія (м'яка обкладинка)" data-author="Себастіан Фітцек" data-price="200" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/6b8394f407ced0324b2fb9dff864eb08.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/6b8394f407ced0324b2fb9dff864eb08.webp" alt="Терапія (м'яка обкладинка)">
+    <h3>Терапія (м'яка обкладинка)</h3>
+    <p>Себастіан Фітцек</p>
+    <p>200 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Хірург" data-author="Тесс Ґеррітсен" data-price="330" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/1/4/14f01e15_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/1/4/14f01e15_1.webp" alt="Хірург">
+    <h3>Хірург</h3>
+    <p>Тесс Ґеррітсен</p>
+    <p>330 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+        </div>
+    </section>
+
+    <section class="genre-section">
+        <h2>Дитяча Література</h2>
+        <div class="book-carousel">
+            <div class="book-card" data-title="Велика книга космосу" data-author="Клаудія Мартін" data-price="390" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/6007518f1809d4c1582526bb33019ec3.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/6007518f1809d4c1582526bb33019ec3.webp" alt="Велика книга космосу">
+    <h3>Велика книга космосу</h3>
+    <p>Клаудія Мартін</p>
+    <p>390 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Прекрасні бабусині казочки" data-author="Карін-Марі Амйо" data-price="300" data-img="https://vivat.com.ua/resize_600x857x95/storage/1.d/import/media/2/f194af344317486a4e435667ffa2c98c.webp">
+    <img src="https://vivat.com.ua/resize_600x857x95/storage/1.d/import/media/2/f194af344317486a4e435667ffa2c98c.webp" alt="Прекрасні бабусині казочки">
+    <h3>Прекрасні бабусині казочки</h3>
+    <p>Карін-Марі Амйо</p>
+    <p>300 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Велика книга фантастичних істот" data-author="Джузеппе Д'Анна" data-price="390" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/cab44a55c04d32b6f4c834cef92b59c0.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/cab44a55c04d32b6f4c834cef92b59c0.webp" alt="Велика книга фантастичних істот">
+    <h3>Велика книга фантастичних істот</h3>
+    <p>Джузеппе Д'Анна</p>
+    <p>390 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Герої дикого лісу. Кролики в біді" data-author="Андреа Шютце" data-price="210" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/d02e08f94e68a6863773959c2ff276ef.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/d02e08f94e68a6863773959c2ff276ef.webp" alt="Герої дикого лісу. Кролики в біді">
+    <h3>Герої дикого лісу. Кролики в біді</h3>
+    <p>Андреа Шютце</p>
+    <p>210 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+        </div>
+    </section>
+
+    <section class="genre-section">
+        <h2>Історія</h2>
+        <div class="book-carousel">
+            <div class="book-card" data-title="Вілла Деккера" data-author="Юрій Винничук" data-price="280" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/1/a1f50db7_9786175220016.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/1/a1f50db7_9786175220016.webp" alt="Вілла Деккера">
+    <h3>Вілла Деккера</h3>
+    <p>Юрій Винничук</p>
+    <p>280 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Книга в камені" data-author="Юрій Даценко" data-price="240" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/f/9/f936b565_56172_109178.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/f/9/f936b565_56172_109178.webp" alt="Книга в камені">
+    <h3>Книга в камені</h3>
+    <p>Юрій Даценко</p>
+    <p>240 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="На вістрі" data-author="Ганна Гороженко" data-price="140" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/d/1/d1264481_9789660393820.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/d/1/d1264481_9789660393820.webp" alt="На вістрі">
+    <h3>На вістрі</h3>
+    <p>Ганна Гороженко</p>
+    <p>140 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Справа майстра-червонодеревника" data-author="Олександр Красовицький, Євгенія Кузькіна" data-price="190" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/d/ad9a80dd_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/a/d/ad9a80dd_1.webp" alt="Справа майстра-червонодеревника">
+    <h3>Справа майстра-червонодеревника</h3>
+    <p>Олександр Красовицький, Євгенія Кузькіна</p>
+    <p>190 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+        </div>
+    </section>
+
+    <section class="genre-section">
+        <h2>Пригоди</h2>
+        <div class="book-carousel">
+            <div class="book-card" data-title="Таємниці Лісу" data-author="Л. Дяченко" data-price="280" data-img="img/taiemnytsi_lisu.jpg">
+                <img src="img/taiemnytsi_lisu.jpg" alt="Таємниці Лісу">
+                <h3>Таємниці Лісу</h3>
+                <p>Автор: Л. Дяченко</p>
+                <p>280грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Скарби Печери" data-author="В. Іванчук" data-price="320" data-img="img/skarby_pechery.jpg">
+                <img src="img/skarby_pechery.jpg" alt="Скарби Печери">
+                <h3>Скарби Печери</h3>
+                <p>Автор: В. Іванчук</p>
+                <p>320грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Морські Мандри" data-author="О. Гончар" data-price="310" data-img="img/morski_mandry.jpg">
+                <img src="img/morski_mandry.jpg" alt="Морські Мандри">
+                <h3>Морські Мандри</h3>
+                <p>Автор: О. Гончар</p>
+                <p>310грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Загублений Острів" data-author="І. Ткаченко" data-price="290" data-img="img/zagublenyi_ostriv.jpg">
+                <img src="img/zagublenyi_ostriv.jpg" alt="Загублений Острів">
+                <h3>Загублений Острів</h3>
+                <p>Автор: І. Ткаченко</p>
+                <p>290грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="По слідах Робінзона" data-author="Н. Кузьменко" data-price="300" data-img="img/po_slidakh_robinzona.jpg">
+                <img src="img/po_slidakh_robinzona.jpg" alt="По слідах Робінзона">
+                <h3>По слідах Робінзона</h3>
+                <p>Автор: Н. Кузьменко</p>
+                <p>300грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Таємниця Старої Карти" data-author="Р. Петренко" data-price="315" data-img="img/taiemnytsia_staroi_karty.jpg">
+                <img src="img/taiemnytsia_staroi_karty.jpg" alt="Таємниця Старої Карти">
+                <h3>Таємниця Старої Карти</h3>
+                <p>Автор: Р. Петренко</p>
+                <p>315грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Небезпечні Джунглі" data-author="О. Сидорук" data-price="295" data-img="img/nebezpechni_dzhungli.jpg">
+                <img src="img/nebezpechni_dzhungli.jpg" alt="Небезпечні Джунглі">
+                <h3>Небезпечні Джунглі</h3>
+                <p>Автор: О. Сидорук</p>
+                <p>295грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Експедиція на Північ" data-author="І. Мороз" data-price="330" data-img="img/ekspedytsiia_na_pivnich.jpg">
+                <img src="img/ekspedytsiia_na_pivnich.jpg" alt="Експедиція на Північ">
+                <h3>Експедиція на Північ</h3>
+                <p>Автор: І. Мороз</p>
+                <p>330грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Сходження на Еверест" data-author="Н. Біла" data-price="340" data-img="img/skhodzhennia_na_everest.jpg">
+                <img src="img/skhodzhennia_na_everest.jpg" alt="Сходження на Еверест">
+                <h3>Сходження на Еверест</h3>
+                <p>Автор: Н. Біла</p>
+                <p>340грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="В пошуках Золотого Міста" data-author="Р. Чорний" data-price="310" data-img="img/v_poshukakh_zolotoho_mista.jpg">
+                <img src="img/v_poshukakh_zolotoho_mista.jpg" alt="В пошуках Золотого Міста">
+                <h3>В пошуках Золотого Міста</h3>
+                <p>Автор: Р. Чорний</p>
+                <p>310грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+            <div class="book-card" data-title="Пригоди Під Водою" data-author="О. Ковальчук" data-price="285" data-img="img/pryhody_pid_vodoiu.jpg">
+                <img src="img/pryhody_pid_vodoiu.jpg" alt="Пригоди Під Водою">
+                <h3>Пригоди Під Водою</h3>
+                <p>Автор: О. Ковальчук</p>
+                <p>285грн</p>
+                <button class="add-to-cart">Додати до кошика</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="genre-section">
+        <h2>Романтика</h2>
+        <div class="book-carousel">
+            Звісно, ось оновлений HTML код для перших чотирьох карток книг жанру "Романтика" на основі наданого фото:
+
+HTML
+
+<div class="book-card" data-title="9 листопада" data-author="Коллін Гувер" data-price="383" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/e/4/e42d4f7d_1.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/e/4/e42d4f7d_1.webp" alt="9 листопада">
+    <h3>9 листопада</h3>
+    <p>Коллін Гувер</p>
+    <p>383 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Мій коханий ворог" data-author="Саллі Торн" data-price="315" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/c252a0894b1903967ede88b017d64c8d.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/c252a0894b1903967ede88b017d64c8d.webp" alt="Мій коханий ворог">
+    <h3>Мій коханий ворог</h3>
+    <p>Саллі Торн</p>
+    <p>315 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Іспанський любовний обман" data-author="Елена Армас" data-price="296" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/ef1c3e7faeb82e25ea1922dfbc861b9c.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/2/ef1c3e7faeb82e25ea1922dfbc861b9c.webp" alt="Іспанський любовний обман">
+    <h3>Іспанський любовний обман</h3>
+    <p>Елена Армас</p>
+    <p>296 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Випадкові наречені" data-author="Крістіна Лорен" data-price="300" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/5/c569c5ebea78635c848f19608485993b.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/5/c569c5ebea78635c848f19608485993b.webp" alt="Випадкові наречені">
+    <h3>Випадкові наречені</h3>
+    <p>Крістіна Лорен</p>
+    <p>300 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+            <div class="book-card" data-title="Впевненість польових квітів" data-author="Мікаела Смельце" data-price="350" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/5/2/522315aa_vpevnenist-polovykh-kvitiv_obl3.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/5/2/522315aa_vpevnenist-polovykh-kvitiv_obl3.webp" alt="Плевенність польових квітів">
+    <h3>Впевненість польових квітів</h3>
+    <p>Мікаела Смельце</p>
+    <p>350 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Роман із містером Бріджертоном" data-author="Джулія Квінн" data-price="390" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/2/4/2488e4d9_roman_obl_new3.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/2/4/2488e4d9_roman_obl_new3.webp" alt="Роман із містером Бріджертоном">
+    <h3>Роман із містером Бріджертоном</h3>
+    <p>Джулія Квінн</p>
+    <p>390 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Випробування нареченої" data-author="Гелен Хоанг" data-price="306" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/3/8/38e7fecc_viprobuvannia-narecenoyi-xudoznia-literatura-25103.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/files/3/8/38e7fecc_viprobuvannia-narecenoyi-xudoznia-literatura-25103.webp" alt="Випробування нареченої">
+    <h3>Випробування нареченої</h3>
+    <p>Гелен Хоанг</p>
+    <p>306 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+<div class="book-card" data-title="Герцог і я" data-author="Джулія Квінн" data-price="400" data-img="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/61465d6142577453738367bc4cea2695.webp">
+    <img src="https://vivat.com.ua/resize_687x686x80/storage/1.d/import/media/1/61465d6142577453738367bc4cea2695.webp" alt="Герцог і я">
+    <h3>Герцог і я</h3>
+    <p>Джулія Квінн</p>
+    <p>400 ₴</p>
+    <button class="add-to-cart">Додати до кошика</button>
+</div>
+              </div>
+    </section>
+</main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Про нас</h3>
+                <p>«ЧитайУкраїно» — це простір, де кожна книга відкриває новий світ. Ми любимо читати й ділитися знанням.</p>
+            </div>
+
+            <div class="footer-section subscribe">
+                <h3>Підпишіться на новини</h3>
+                <form onsubmit="event.preventDefault(); alert('Дякуємо за підписку! 📬');">
+                    <input type="email" placeholder="Ваша ел. пошта" required>
+                    <button type="submit">Підписатися</button>
+                </form>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Посилання</h3>
+                <ul>
+                    <li><a href="#">Умови користування</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Ми в соцмережах</h3>
+                <div class="social-icons">
+                    <a  href="https://www.facebook.com/ksdbookclub/"><img class="pp" src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="Facebook"></a>
+                    <a    href="https://www.instagram.com/ksd_bookclub/"><img class="pp" src="https://img.icons8.com/?size=512&id=32320&format=png" alt="Instagram"></a>
+                    <a  href="#"><img class="pp" src="https://img.icons8.com/ios_filled/512/telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
