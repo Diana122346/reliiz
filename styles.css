@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf5;
+    color: #4d4d4d;
+}
+
+header {
+    background-color: #fcefee;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.omg {
+    padding-right: 190px;
+    padding-top: 460px;
+    font-size: 25px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Навігація */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+    padding: 70px;
+    font-size: 21px;
+}
+
+/* Плавна лінія під посиланням */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #f8c5c5;
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: #ff7f7f;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.genre-section {
+    padding: 2rem;
+}
+
+.genre-section h2 {
+    margin-bottom: 1rem;
+    color: #7d4c9e;
+}
+
+.book-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Для плавної прокрутки на iOS */
+    scroll-behavior: smooth; /* Спробуйте для плавності на інших браузерах */
+}
+
+.book-card {
+    flex: 0 0 auto;
+    background: #ffe5ec;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Додано transition для тіні */
+    width: 200px;
+    scroll-snap-align: start;
+}
+
+.book-card:hover {
+    transform: scale(1.05) rotate(-2deg); /* Легкий нахил при наведенні */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* Збільшена тінь при наведенні */
+}
+
+.book-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+button.add-to-cart {
+    background-color: #c1a3e8;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.add-to-cart:hover {
+    background-color: #a583d6;
+}
+
+.site-footer {
+    background-color: #fdeaea;
+    padding: 40px 20px 20px;
+    font-size: 15px;
+    color: #5a3a3a;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #c94c4c;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    color: #5a3a3a;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: #ff7f7f;
+    transition: color 0.3s ease;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section input[type="email"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ffcaca;
+}
+
+.footer-section button {
+    padding: 8px;
+    background-color: #fbb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #ff7f7f;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #f8cfcf;
+    margin-top: 30px;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff0f6;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-list li {
+    background: #fce4ec;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 5px solid #d88ac7;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+.cart-list li::before {
+    content: "📘 ";
+}
+
+/* кнопки оформлення замовлення */
+.checkout-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.75rem 2rem;
+    background-color: #ba68c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #9c4dcc;
+}
+
+.cart-card {
+    display: flex;
+    align-items: center;
+    background: #ffe3f2;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    gap: 1rem;
+}
+
+.cart-card img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-card .cart-info {
+    flex-grow: 1;
+}
+
+.cart-card .cart-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cart-card .cart-author {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-control button {
+    background: #c48bfc;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: none;
+}
+
+.pp {
+    padding-right: 50px;
+}
+
+.announcements {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff0f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcement {
+    border-left: 6px solid #ba68c8;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    background: #fce4ec;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.announcement h3 {
+    margin-top: 0;
+    color: #7b1fa2;
+}
+
+.announcement p {
+    margin: 0.5rem 0;
+}
+
+.announcement-date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Стилі для смуги прокрутки (Webkit - Chrome, Safari, Edge) */
+.book-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.book-carousel::-webkit-scrollbar-thumb {
+    background-color: #f8c5c5;
+    border-radius: 4px;
+}
+
+.book-carousel::-webkit-scrollbar-thumb:hover {
+    background-color: #ff7f7f;
+}
+
+/* Стилі для смуги прокрутки (Firefox) */
+.book-carousel {
+    scrollbar-width: thin;
+    scrollbar-color: #f8c5c5 transparent;
+}
