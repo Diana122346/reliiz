@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ваш кошик</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">📚 Книгарня</div>
+        <nav>
+            <a class="omg" href="index.html">Головна</a>
+            <a class="omg" href="announcements.html">Анонси</a>
+            <a class="omg" href="cart.html">Кошик <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="cart-container">
+            <div id="cart-items" class="cart-list"></div>
+            <p id="empty-cart" class="empty-message">Ваш кошик порожній.</p>
+            <div id="cart-summary" class="cart-summary">
+                <p>Загальна сума: <span id="total-price">0</span> ₴</p>
+                <button class="checkout-btn">Оформити замовлення</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Про нас</h3>
+                <p>«ЧитайУкраїно» — це простір, де кожна книга відкриває новий світ. Ми любимо читати й ділитися знанням.</p>
+            </div>
+
+            <div class="footer-section subscribe">
+                <h3>Підпишіться на новини</h3>
+                <form onsubmit="event.preventDefault(); alert('Дякуємо за підписку! 📬');">
+                    <input type="email" placeholder="Ваша ел. пошта" required>
+                    <button type="submit">Підписатися</button>
+                </form>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Посилання</h3>
+                <ul>
+                    <li><a href="#">Умови користування</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Ми в соцмережах</h3>
+                <div class="social-icons">
+                    <a  href="https://www.facebook.com/ksdbookclub/"><img class="pp" src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="Facebook"></a>
+                    <a    href="https://www.instagram.com/ksd_bookclub/"><img class="pp" src="https://img.icons8.com/?size=512&id=32320&format=png" alt="Instagram"></a>
+                    <a  href="#"><img class="pp" src="https://img.icons8.com/ios_filled/512/telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
