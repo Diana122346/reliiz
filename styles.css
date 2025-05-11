@@ -115,6 +115,10 @@ button.add-to-cart:hover {
     background-color: #a583d6;
 }
 
+footer{
+    margin-bottom: 50px;
+}
+
 .site-footer {
     background-color: #fdeaea;
     padding: 40px 20px 20px;
