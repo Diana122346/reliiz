@@ -91,7 +91,7 @@ nav a:hover::after {
 }
 
 .book-card:hover {
-    transform: scale(1.05) rotate(-1deg); /* Легкий нахил при наведенні */
+    transform: scale(1.05) rotate(-0.25deg); /* Легкий нахил при наведенні */
     box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* Збільшена тінь при наведенні */
 }
 
