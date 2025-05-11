@@ -16,13 +16,13 @@ header {
 }
 
 .omg {
-    padding-right: 190px;
-    padding-top: 460px;
-    font-size: 25px;
+    padding-right: 180px;
+    padding-top: 420px;
+    font-size: 23px;
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -91,7 +91,7 @@ nav a:hover::after {
 }
 
 .book-card:hover {
-    transform: scale(1.05) rotate(-2deg); /* Легкий нахил при наведенні */
+    transform: scale(1.05) rotate(-1deg); /* Легкий нахил при наведенні */
     box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* Збільшена тінь при наведенні */
 }
 
